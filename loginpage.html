@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username"  />
+    <input type="date" id="date" />
+    <input type="password"  id="password"/>
+    <!-- <p id="err"></p>
+    <p id="err2"></p> -->
+    <button onclick="submit()">submit</button>
+    <script>
+        function submit() {
+            let username =document.getElementById("username").value;
+            let date=document.getElementById("date").value;
+            console.log(username);
+            // if(username=="" || date==""){
+            //     let username = (document.getElementById("err").innerHTML="enter your username and date");
+
+            // }else{
+            //     document.getElementById("err").innerHTML = username;
+            //     document.getElementById("err2").innerHTML = date;
+            //     document.getElementById("password").innerHTML = password;
+
+            // }
+        }
+    </script>
+</body>
+</html>
