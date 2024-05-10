@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/news.js"></script>
+
 </head>
 <body>
-    <input type="text" id="username"  />
-    <input type="date" id="date" />
-    <input type="password"  id="password"/>
-    <!-- <p id="err"></p>
-    <p id="err2"></p> -->
-    <button onclick="submit()">submit</button>
-    <script>
-        function submit() {
-            let username =document.getElementById("username").value;
-            let date=document.getElementById("date").value;
-            console.log(username);
-            // if(username=="" || date==""){
-            //     let username = (document.getElementById("err").innerHTML="enter your username and date");
+    <div class="wrapper">
+        <div class="bg-animate" id="bg-animate"></div>
+        <div class="curved" id="curved"></div>
+        <div class="form-wrapper Sign-in">
+            <form action="">
+                <h2>Sign-in</h2>
+                <div class="input-box">
+                    <input type="text"  id="Username">
+                    <label>Username</label>
+    
+                </div>
+                <p id="para1" style="color: red; margin-top: 2px;"></p>
+                <div class="input-box">
+                    <input type="email"  id="Email" >
+                    <label>Email</label>
+                   
+                </div>
+                <p id="para2" style="color: red; margin-top: 2px;"></p>
+                <div class="input-box">
+                    <input type="password" id="Password">
+                    <label >Password</label>
+                    <!-- <p id="cnf" style="color: red; margin-top: 2px;"></p> -->
+                </div>
+                <p id="para3" style="color: red; margin-top: 2px;"></p>
+                <div class="input-box">
+                    <input type="password" id="confirm_password" >
+                    <label >confirm password</label>
+                </div>
+                <p id="para4" style="color: red; margin-top: 2px;"></p>
+                
+                <p id="para5" style="color: red; margin-top: 2px;"></p>
+                <a href="#" class="form-link" onclick="submit()"> Submit
+                </a>
+                <!-- <button onclick="save()">submit</button> -->
+               
+            </form>
+        </div> 
 
-            // }else{
-            //     document.getElementById("err").innerHTML = username;
-            //     document.getElementById("err2").innerHTML = date;
-            //     document.getElementById("password").innerHTML = password;
-
-            // }
-        }
-    </script>
+        <div class="colors">
+        <span onclick="changecolor('#77dd77')" class="color" style="--clr:#77dd77;"></span>
+        <span onclick="changecolor('#f67599')" class="color" style="--clr:#f67599;"></span>
+        <span onclick="changecolor('#976ed7')" class="color active" style="--clr:#976ed7;"></span>
+        <span onclick="changecolor('#1db9c3')" class="color" style="--clr:#1db9c3;"></span>
+        <span onclick="changecolor('#ffb347')" class="color" style="--clr:#ffb347;"></span>
+    </div>
 </body>
 </html>
